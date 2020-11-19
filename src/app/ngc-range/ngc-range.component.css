@@ -12,29 +12,40 @@
 }
 
 .slider-track{
-position: relative;
-display: block;
-height: 2px;
-cursor: pointer;
-background: #aaa;
+    position: relative;
+    display: block;
+    height: 2px;
+    cursor: pointer;
+    background: #aaa;
 }
 
 .slider-position{
-position: absolute;
-top: 50%;
-display: block;
-width: 8px;
-height: 8px;
-margin-top: -6px;
-cursor: pointer;
-background: #666;
-border: 6px solid #666;
-border-radius: 50%;
-outline: none;
-transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
--webkit-appearance: none;
--moz-appearance: none;
-appearance: none;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin-top: -5px;
+    cursor: pointer;
+    background: #666;
+    border: 6px solid #666;
+    border-radius: 50%;
+    outline: none;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.slider-position:hover {
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+}
+.slider-position-big {
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
 }
 
 .slider-range-label{

@@ -27,8 +27,8 @@ export class NgcRangeComponent implements OnInit, AfterViewInit {
 
   last: any;
   mouseDown: boolean;
-  isMouseDown: boolean;
-  isMouseDown2: boolean;
+  public isMouseDown: boolean;
+  public isMouseDown2: boolean;
   decimals:any;
 
   public minPrice: any;

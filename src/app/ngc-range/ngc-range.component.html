@@ -27,7 +27,7 @@
         </div>
     </div>
 </div>
-<div #divTrack style="height: 43pc;border: 1px solid;" class="row">
+<div #divTrack style="height: 90vh;border: 1px solid;" class="row">
     <div class="col-md-1">
         <div class="input-group mb-3">
             <div class="input-group-prepend">
@@ -40,12 +40,12 @@
         <div #sliderTrack class="slider-track" style="margin-top: 3%;">
             <span #myTestDiv1 (mousedown)="onMouseDown($event,1)" class="input-range__slider-container"
                 style="position: absolute; left: 0%;">
-                <div aria-valuemax="400" aria-valuemin="25" aria-valuenow="89" class="slider-position" role="slider"
+                <div  [ngClass]="{'slider-position-big':isMouseDown}" aria-valuemax="400" aria-valuemin="25" aria-valuenow="89" class="slider-position" role="slider"
                     tabindex="0" aria-label="Minimum price"></div>
             </span>
             <span #myTestDiv2 (mousedown)="onMouseDown($event,2)" class="input-range__slider-container"
                 style="position: absolute; left: 100%;">
-                <div aria-valuemax="400" aria-valuemin="25" aria-valuenow="89" class="slider-position" role="slider"
+                <div [ngClass]="{'slider-position-big':isMouseDown2}" aria-valuemax="400" aria-valuemin="25" aria-valuenow="89" class="slider-position" role="slider"
                     tabindex="0" aria-label="Minimum price"></div>
             </span>
         </div>
