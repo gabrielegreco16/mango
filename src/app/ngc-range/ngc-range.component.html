@@ -1,0 +1,62 @@
+<div class="row">
+    <div class="col-md-2">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Min $</span>
+            </div>
+            <input  numeric decimals="{{decimals}}" (click)="onInputMin($event.target.value)" class="form-control"
+                aria-label="Amount (to the nearest dollar)">
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Max $</span>
+            </div>
+            <input  numeric decimals="{{decimals}}" (click)="onInputMax($event.target.value)" class="form-control"
+                aria-label="Amount (to the nearest dollar)">
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">To refresh de ranges click on the input</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div #divTrack style="height: 43pc;border: 1px solid;" class="row">
+    <div class="col-md-1">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text"> $ {{minPrice}}</span>
+            </div>
+            
+        </div>
+    </div>
+    <div class="col-md-4 slider-range-percent">
+        <div #sliderTrack class="slider-track" style="margin-top: 3%;">
+            <span #myTestDiv1 (mousedown)="onMouseDown($event,1)" class="input-range__slider-container"
+                style="position: absolute; left: 0%;">
+                <div aria-valuemax="400" aria-valuemin="25" aria-valuenow="89" class="slider-position" role="slider"
+                    tabindex="0" aria-label="Minimum price"></div>
+            </span>
+            <span #myTestDiv2 (mousedown)="onMouseDown($event,2)" class="input-range__slider-container"
+                style="position: absolute; left: 100%;">
+                <div aria-valuemax="400" aria-valuemin="25" aria-valuenow="89" class="slider-position" role="slider"
+                    tabindex="0" aria-label="Minimum price"></div>
+            </span>
+        </div>
+
+    </div>
+    <div class="col-md-1">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">$ {{maxPrice}}</span>
+            </div>
+            
+        </div>
+    </div>
+</div>

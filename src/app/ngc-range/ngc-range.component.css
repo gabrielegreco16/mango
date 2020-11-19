@@ -1,0 +1,43 @@
+.slider-range{
+    position: relative;
+    width: 600px;
+    height: 8px;
+    margin: 50px 0;
+    margin-left: 500px;
+}
+
+.slider-range-percent{
+    position: relative;
+ 
+}
+
+.slider-track{
+position: relative;
+display: block;
+height: 2px;
+cursor: pointer;
+background: #aaa;
+}
+
+.slider-position{
+position: absolute;
+top: 50%;
+display: block;
+width: 8px;
+height: 8px;
+margin-top: -6px;
+cursor: pointer;
+background: #666;
+border: 6px solid #666;
+border-radius: 50%;
+outline: none;
+transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
+
+.slider-range-label{
+    position: absolute;
+    top: 20px;
+    }
